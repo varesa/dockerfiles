@@ -1,0 +1,6 @@
+FROM oma/rabbitmq
+MAINTAINER Esa Varemo <esa@kuivanto.fi>
+
+RUN echo && rabbitmq-plugins enable rabbitmq_mqtt --offline 
+
+EXPOSE 1883 8883
