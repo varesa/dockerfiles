@@ -9,7 +9,7 @@ function stop {
 	done
 }
 
-trap "stop" SIGTERM
+trap "stop" SIGTERM SIGINT
 
 mysqld_safe &
 
